@@ -1,0 +1,8 @@
+#!/bin/bash 
+yum update -y
+yum install httpd -y
+systemctl start httpd	# apache server 
+systemctl enable httpd  #to check it is enable or not using this command
+systemctl status httpd  # status check
+echo “my web server” >> /var/www/html/index.html
+
